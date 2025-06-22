@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>توزيع الشرايح من اللفة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>برنامج توزيع الشرايح من اللفة</h2>
+
+    <label for="mainInch">المقاس الرئيسي بالبوصة (مثلاً 6):</label>
+    <input type="number" id="mainInch" step="0.1" placeholder="مثلاً 6">
+
+    <label for="thickness">السُمك (مم):</label>
+    <input type="number" id="thickness" step="0.1" placeholder="مثلاً 3">
+
+    <label for="coilWidth">عرض اللفة (مم):</label>
+    <input type="number" id="coilWidth" value="1500">
+
+    <button onclick="calculateDistribution()">احسب خطة الإنتاج</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
